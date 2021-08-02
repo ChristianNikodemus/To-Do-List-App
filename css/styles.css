@@ -1,0 +1,42 @@
+:root {
+  /* Colours selected from Coloor (https://coolors.co/0081a7-00afb9-fdfcdc-fed9b7-f07167)*/
+  --font-stack-primary: 'Lato', sans-serif;
+  --font-stack-secondary: 'Roboto', serif;
+  --primary-color: #0081a7;
+  /* Dark blue */
+  --secondary-color: #00afb9;
+  /* Turquouise */
+  --background-color: #ffffff;
+  /* White */
+  --secondary-background-color: #fed9b7;
+  /* Light orange */
+  --third-background-color: #f07167;
+  /* Dark red */
+  --fourth-background-color: #fdfcdc;
+  /* Light yellow */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-stack-primary);
+  font-weight: 400;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+  color: var(--primary-color);
+  /* Sets all text color*/
+  text-align: center;
+  background-color: var(--background-color);
+
+}
+
+h1 {
+  font-family: var(--font-stack-secondary);
+  font-weight: 500;
+  margin: 0;
+}
