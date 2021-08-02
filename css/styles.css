@@ -1,42 +1,61 @@
-:root {
-  /* Colours selected from Coloor (https://coolors.co/0081a7-00afb9-fdfcdc-fed9b7-f07167)*/
-  --font-stack-primary: 'Lato', sans-serif;
-  --font-stack-secondary: 'Roboto', serif;
-  --primary-color: #0081a7;
-  /* Dark blue */
-  --secondary-color: #00afb9;
-  /* Turquouise */
-  --background-color: #ffffff;
-  /* White */
-  --secondary-background-color: #fed9b7;
-  /* Light orange */
-  --third-background-color: #f07167;
-  /* Dark red */
-  --fourth-background-color: #fdfcdc;
-  /* Light yellow */
-}
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
 body {
-  font-family: var(--font-stack-primary);
-  font-weight: 400;
-  font-size: 16px;
-  /* Sets the font size to 16px */
-  line-height: 1.6;
-  /* Sets the line-height to 1.6 */
-  color: var(--primary-color);
-  /* Sets all text color*/
-  text-align: center;
-  background-color: var(--background-color);
-
+font: normal normal 13px/16px "Open Sans", sans-serif;
+background: #dfdfdf;
 }
 
-h1 {
-  font-family: var(--font-stack-secondary);
-  font-weight: 500;
-  margin: 0;
+.container{
+padding: 20px;
+width: 300px;
+margin: 0 auto;
+margin-top: 40px;
+background: white;
+border-radius: 5px;}
+
+form {
+display: inline-block;
+}
+
+input{
+padding: 4px 15px 4px 5px;
+}
+
+#button{
+display: inline-block;
+background-color:#fc999b;
+color:#ffffff;
+border-radius: 5px;
+text-align:center;
+margin-top:2px;
+padding: 5px 15px;
+}
+
+#button:hover{
+cursor: pointer;
+opacity: .8;}
+
+ol {padding-left: 20px;}
+
+ol li {padding: 5px;color:#000;}
+
+ol li:nth-child(even){background: #dfdfdf;}
+
+.strike{text-decoration: line-through;}
+
+li:hover{
+  cursor: pointer;
+ }
+
+.delete {
+	display: none;
+}
+
+li > crossOutButton {
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
 }
