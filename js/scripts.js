@@ -10,4 +10,8 @@ function newItem() {
     $('#list').append(li);
   }
 
+  function crossOut() {
+    li.toggleClass("strike");
+  }
+
 }
