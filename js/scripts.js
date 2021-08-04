@@ -18,4 +18,8 @@ function newItem() {
     li.toggleClass("strike");
   });
 
+  let crossOutButton = $('<crossOutButton></crossOutButton>');
+  crossOutButton.append(document.createTextNode('X'));
+  li.appendChild(crossOutButton);
+
 }
