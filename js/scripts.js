@@ -20,6 +20,6 @@ function newItem() {
 
   let crossOutButton = $('<crossOutButton></crossOutButton>');
   crossOutButton.append(document.createTextNode('X'));
-  li.appendChild(crossOutButton);
+  li.append(crossOutButton);
 
 }
