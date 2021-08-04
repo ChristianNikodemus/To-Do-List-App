@@ -22,4 +22,9 @@ function newItem() {
   crossOutButton.append(document.createTextNode('X'));
   li.append(crossOutButton);
 
+  crossOutButton.on("click", deleteListItem);
+  function deleteListItem() {
+    li.addClass("delete")
+  }
+
 }
